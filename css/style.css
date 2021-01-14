@@ -32,12 +32,52 @@ h6 {
 
 /* intro */
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: 100%;
   height: 100vh;
 
   background: url(../img/banner.jpg) center no-repeat;
   background-size: cover;
 }
+
+.intro__inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.intro__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 150px;
+  line-height: 140px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.intro__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 71px auto 0;
+
+  background-color: #fff;
+}
+
+.intro__suptitle {
+  margin-bottom: 42px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 
 /* header */
 
@@ -57,7 +97,7 @@ h6 {
 }
 
 .header__logo {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   padding-top: 28px;
   font-size: 30px;
   line-height: 1.2;
@@ -80,11 +120,28 @@ h6 {
   margin: 0 58px;
   color: #ffffff;
   text-decoration: none;
-padding-bottom: 10px;
+  padding-bottom: 10px;
   transition: color 0.2s linear;
 }
 
 .nav__link:hover {
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
+}
+
+/* button */
+.btn {
+
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  padding: 15px 33px;
+
+
 }
