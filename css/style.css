@@ -47,6 +47,7 @@ h6 {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .intro__title {
@@ -56,7 +57,6 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
 }
 
 .intro__title::after {
@@ -64,7 +64,7 @@ h6 {
   display: block;
   width: 60px;
   height: 3px;
-  margin: 71px auto 0;
+  margin: 71px auto 50px;
 
   background-color: #fff;
 }
@@ -72,7 +72,6 @@ h6 {
 .intro__suptitle {
   margin-bottom: 42px;
   font-family: 'Kaushan Script', cursive;
-  text-align: center;
   font-size: 72px;
   font-weight: 400;
   color: #ffffff;
@@ -143,5 +142,61 @@ h6 {
   border: 3px solid #ffffff;
   padding: 15px 33px;
 
+  transition: background .1s linear, color .1s linear;
+}
 
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* slider */
+.slider {
+  width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: 1;
+}
+
+.slider__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__item {
+  width: 23%;
+  padding: 20px 0;
+  border-top: 3px solid #fff;
+
+  position: relative;
+
+  opacity: .7;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slider__item .active {
+  opacity: 1;
+}
+
+
+.slider__item .active::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+
+  background-color: #f38181;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 1;
+}
+
+.slider__number {
+  font-size: 24px;
+  font-weight: 700;
 }
