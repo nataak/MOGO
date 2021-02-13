@@ -72,12 +72,11 @@ h6 {
 
 .intro__suptitle {
   margin-bottom: 42px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   font-size: 72px;
   font-weight: 400;
   color: #ffffff;
 }
-
 
 /* header */
 
@@ -131,7 +130,6 @@ h6 {
 
 /* button */
 .btn {
-
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
@@ -143,7 +141,7 @@ h6 {
   border: 3px solid #ffffff;
   padding: 15px 33px;
 
-  transition: background .1s linear, color .1s linear;
+  transition: background 0.1s linear, color 0.1s linear;
 }
 
 .btn:hover {
@@ -172,7 +170,7 @@ h6 {
 
   position: relative;
 
-  opacity: .7;
+  opacity: 0.7;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
@@ -181,7 +179,6 @@ h6 {
 .slider__item .active {
   opacity: 1;
 }
-
 
 .slider__item .active::before {
   content: "";
@@ -200,4 +197,49 @@ h6 {
 .slider__number {
   font-size: 24px;
   font-weight: 700;
+}
+
+/* Section */
+
+.section {
+  padding: 91px 0 110px 0;
+}
+
+.section__header {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 40px;
+
+  text-align: center;
+}
+
+.section__suptitle {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+}
+
+.section__title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 40px auto 47px;
+  background-color: #f38181;
+}
+
+.section__text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
