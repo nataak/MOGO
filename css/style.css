@@ -267,7 +267,7 @@ h6 {
   opacity: 0.1;
 }
 
-.about__item:hover .about__text{
+.about__item:hover .about__text {
   opacity: 1;
 }
 
@@ -300,5 +300,41 @@ h6 {
   z-index: 2;
   transform: translate3d(0, -50%, 0);
 
-  transition: opacity .1s linear;
+  transition: opacity 0.1s linear;
+}
+
+/* Statistics */
+
+.statistics {
+  background-color: #95e1d3;
+}
+
+.stat {
+  display: flex;
+}
+
+.stat__item {
+  flex: 1 1 0;
+  padding: 90px 25px;
+  border-left: 1px solid #b5eae0;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.stat__item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+
+.stat__count {
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stat__text{
+  font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
 }
